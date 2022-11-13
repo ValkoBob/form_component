@@ -1,0 +1,54 @@
+{
+  "ignorePatterns": [
+    "*.test.js",
+    "**/__tests__/*.js"
+  ],
+  "env": {
+    "jest": true
+  },
+  "extends": "react-app",
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "max-nested-callbacks": [
+      "warn",
+      {
+        "max": 3
+      }
+    ],
+    "max-statements-per-line": [
+      "warn",
+      {
+        "max": 2
+      }
+    ],
+    "max-params": [
+      "warn",
+      4
+    ],
+    "max-depth": [
+      "warn",
+      4
+    ],
+    "import/default": "error",
+    "import/no-cycle": "error",
+    "import/no-webpack-loader-syntax": "off",
+    "import/no-self-import": [
+      "error"
+    ],
+    "import/no-useless-path-segments": [
+      "error",
+      {
+        "noUselessIndex": true
+      }
+    ]
+  }
+}

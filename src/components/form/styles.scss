@@ -1,0 +1,29 @@
+.form-wrapper {
+  padding: 5px 15px;
+
+  .subform {
+    &-header {
+      padding-bottom: 10px;
+      & > span {
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .grid-with-three-fraction,
+    .grid-with-two-fraction {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .grid-with-three-fraction {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-with-two-fraction {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
